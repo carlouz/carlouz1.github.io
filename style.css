@@ -1,0 +1,91 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Agbalumo', sans-serif;
+}
+
+:root {
+    --bg-primary: #e40000;
+    --bg-secondary: #090A09;
+    --txt-primary: rgb(155, 155, 155);
+    --txt-secondary: rgb(192, 192, 192);
+    --icons-bg-primary: rgb(231, 198, 198);
+    --icons-bg-secondary: black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    background-color: var(--bg-primary);
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+}
+
+.reper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 40%;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: var(--bg-secondary);
+    color: var(--txt-primary);
+    padding: 30px;
+    margin: 50px;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.judul {
+    margin-bottom: 5px;
+}
+
+.icons {
+    font-size: 40px;
+    color: var(--icons-bg-primary)
+}
+
+.deskripsi {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.tombol {
+    padding: 15px;
+    cursor: pointer;
+    width: 100%; 
+    border: none;  
+}
+
+.tombol:hover {
+    background-color: var(--bg-primary);
+    color: var(--txt-primary);
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg);
+    transition: .3s ease-in-out;
+}
+
+@media screen and (max-width: 470px) {
+    .card {
+        width: 95%;
+    }
+    .judul {
+        font-size: 3em;
+    }
+    .icons {
+        font-size: 2em;
+    }
+    .deskripsi {
+        font-size: 1.5em;
+    }
+    .tombol {
+        padding: 16px;
+        font-size: 2em;
+    }
+
+}
